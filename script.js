@@ -176,3 +176,31 @@ console.log("Numri i grupeve të plota:", grupet);
 console.log("Fletët e mbetura:", mbetja);
 console.log("Kontrolli ((grupet * 6) + mbetja):", kontrolli);
 console.log("\n"); 
+
+// ==========================================
+// 09. FATURA ME TË DHËNA TEKSTUALE
+// ==========================================
+console.log("=== 09. FATURA ME TË DHËNA TEKSTUALE ===");
+
+let cmimiTekst1 = "19.90";
+let cmimiTekst2 = "8.50";
+
+let sasia1 = 2;
+let sasia2 = 3;
+
+let cmimi1 = Number(cmimiTekst1);
+let cmimi2 = Number(cmimiTekst2);
+
+let totalArtikulli1 = cmimi1 * sasia1;
+let totalArtikulli2 = cmimi2 * sasia2;
+
+let shumaPorosise = totalArtikulli1 + totalArtikulli2;
+let shumaFinaleVlera = shumaPorosise * 1.10;
+
+let shumaFinaljaFormatuar = shumaFinaleVlera.toFixed(2);
+
+console.log("Totali i artikullit 1:", totalArtikulli1.toFixed(2), "Euro");
+console.log("Totali i artikullit 2:", totalArtikulli2.toFixed(2), "Euro");
+console.log("Shuma finale me 10% shërbim:", shumaFinaljaFormatuar, "Euro");
+console.log("Tipi i vlerës së formatizuar (toFixed kthen string):", typeof shumaFinaljaFormatuar);
+console.log("\n");
