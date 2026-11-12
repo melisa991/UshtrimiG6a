@@ -1,3 +1,8 @@
+// ==========================================
+// 01. FATURA E LIBRARISË
+// ==========================================
+console.log("=== 01. FATURA E LIBRARISË ===");
+
 let cmimiLibrit = 12.50;
 let sasiaLibrave = 3;
 
@@ -16,7 +21,11 @@ console.log("Fletoret:", totaliFletoreve, "Euro" );
 console.log("Transporti: 2.50 Euro");
 console.log("Totali:", totali,"Euro");
 
-//Ushtrimi 2 
+// ==========================================
+// 02. REZULTATI I VLERËSIMIT
+// ==========================================
+console.log("=== 02. REZULTATI I VLERËSIMIT ===");
+
 let aktiviteti = 18;
 let projekti = 24;
 let provimi = 43;
@@ -33,4 +42,80 @@ let perqindjaRe = (totaliRi / 100) *100;
 
 console.log("Totali i ri:", totaliRi);
 console.log("Perqindja e re:" , perqindjaRe + "%");
+
+// ==========================================
+// 03. BUXHETI I NJË UDHËTIMI
+// ==========================================
+console.log("=== 03. BUXHETI I NJË UDHËTIMI ===");
+
+let akomodimi = 96;
+let transporti = 42;
+let ushqimi = 57;
+
+let personat = 3;
+let buxheti = 80;
+
+let kostoTotale = akomodimi + transporti + ushqimi;
+
+console.log("Kostoja totale:", kostoTotale, "Euro");
+
+let pjesaPersonit = kostoTotale / personat;
+
+console.log("Secili person paguan:", pjesaPersonit, "Euro");
+
+let parateMbetura = buxheti - pjesaPersonit;
+
+console.log("Secilit i mbeten:", parateMbetura, "Euro");
+
+// ==========================================
+// 04. POROSIA ONLINE ME ZBRITJE
+// ==========================================
+console.log("=== 04. POROSIA ONLINE ME ZBRITJE ===");
+
+let sasiaProd1= 2;
+let cmimiProd1= 35;
+
+let sasiaProd2 = 1;
+let cmimiProd2 = 24;
+
+let perqindjaZbritjes = 0.15; // 15%
+let kostoTransporti = 4;
+
+let cmimiParaZbritjes = (sasiaProd1 * cmimiProd1) + (sasiaProd2 * cmimiProd2);
+console.log("Çmimi para zbritjes:", cmimiParaZbritjes, "Euro");
+
+let shumaZbritjes = cmimiParaZbritjes * perqindjaZbritjes;
+console.log("Shuma e zbritjes (15%):", shumaZbritjes, "Euro");
+
+let cmimiPasZbritjes = cmimiParaZbritjes - shumaZbritjes;
+console.log("Çmimi pas zbritjes:", cmimiPasZbritjes, "Euro");
+
+console.log("Transporti:", kostoTransporti, "Euro");
+
+let vleraPerfundimtare = cmimiPasZbritjes + kostoTransporti;
+console.log("Vlera përfundimtare:", vleraPerfundimtare, "Euro");
+
+// ==========================================
+// 05. KONVERTIMI I TË DHËNAVE
+// ==========================================
+console.log("=== 05. KONVERTIMI I TË DHËNAVE ===");
+
+let vlera1 = "25";
+let vlera2 = "17";
+let vlera3 = "8";
+
+let mbledhjaPaKonvertim = vlera1 + vlera2 + vlera3;
+console.log("Rezultati pa konvertim:", mbledhjaPaKonvertim);
+
+let num1 = Number(vlera1);
+let num2 = Number(vlera2);
+let num3 = Number(vlera3);
+
+let shumaNumrave = num1 + num2 + num3;
+let mesatarja = shumaNumrave / 3;
+
+console.log("Shuma pas konvertimit:", shumaNumrave);
+console.log("Tipi i shumës:", typeof shumaNumrave);
+console.log("Mesatarja:", mesatarja, "| Tipi:", typeof mesatarja);
+
 
