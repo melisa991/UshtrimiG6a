@@ -157,4 +157,22 @@ stoku += 35;
 console.log("Stoku pas furnizimit të ri (+35):", stoku, "njësi");
 
 let vleraStokut = stoku * cmimiPerNjesi;
-console.log("Vlera e stokut përfundimtar:", vleraStokut, "Euro");
+console.log("Vlera e stokut përfundimtar:", vleraStokut, "Euro"); 
+
+
+// ==========================================
+// 08. SHPËRDARJA E MATERIALEVE
+// ==========================================
+console.log("=== 08. SHPËRDARJA E MATERIALEVE ===");
+
+let fletetTotale = 157;
+let fletetPerStudent = 6;
+
+let grupet = parseInt(fletetTotale / fletetPerStudent);
+let mbetja = fletetTotale % fletetPerStudent;
+let kontrolli = (grupet * fletetPerStudent) + mbetja;
+
+console.log("Numri i grupeve të plota:", grupet);
+console.log("Fletët e mbetura:", mbetja);
+console.log("Kontrolli ((grupet * 6) + mbetja):", kontrolli);
+console.log("\n"); 
