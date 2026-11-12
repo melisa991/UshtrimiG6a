@@ -204,3 +204,31 @@ console.log("Totali i artikullit 2:", totalArtikulli2.toFixed(2), "Euro");
 console.log("Shuma finale me 10% shërbim:", shumaFinaljaFormatuar, "Euro");
 console.log("Tipi i vlerës së formatizuar (toFixed kthen string):", typeof shumaFinaljaFormatuar);
 console.log("\n");
+
+// ==========================================
+// 10. RAPORTI FINANCIAR I NJË AKTIVITETI
+// ==========================================
+console.log("=== 10. RAPORTI FINANCIAR I NJË AKTIVITETI ===");
+
+let pjesemarresit = 45;
+let pagesaPerPerson = 12;
+
+let salla = 180;
+let materialet = 95;
+let reklama = 60;
+
+let teArdhurat = pjesemarresit * pagesaPerPerson;
+let shpenzimetTotale = salla + materialet + reklama;
+let diferenca = teArdhurat - shpenzimetTotale;
+
+console.log("--- RAPORTI FILLESTAR ---");
+console.log("Të ardhurat totale:", teArdhurat, "Euro");
+console.log("Shpenzimet totale:", shpenzimetTotale, "Euro");
+console.log("Diferenca (Fitimi):", diferenca, "Euro");
+
+shpenzimetTotale += 25;
+let diferencaEre = teArdhurat - shpenzimetTotale;
+
+console.log("--- PAS SHTIMIT TË SHPENZIMEVE TË PAPARASHIKUARA ---");
+console.log("Shpenzimet e reja totale:", shpenzimetTotale, "Euro");
+console.log("Diferenca e re (Fitimi i ri):", diferencaEre, "Euro");
