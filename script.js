@@ -15,3 +15,22 @@ console.log("Librat:", totaliLibrave,"Euro");
 console.log("Fletoret:", totaliFletoreve, "Euro" );
 console.log("Transporti: 2.50 Euro");
 console.log("Totali:", totali,"Euro");
+
+//Ushtrimi 2 
+let aktiviteti = 18;
+let projekti = 24;
+let provimi = 43;
+
+let totaliPare = aktiviteti + projekti + provimi;
+console.log("Totali i pare", totaliPare);
+
+let perqindjaPare = (totaliPare / 100) * 100;
+console.log("Perqindja:", perqindjaPare + "%");
+
+provimi = 48;
+let totaliRi = aktiviteti + projekti + provimi;
+let perqindjaRe = (totaliRi / 100) *100;
+
+console.log("Totali i ri:", totaliRi);
+console.log("Perqindja e re:" , perqindjaRe + "%");
+
