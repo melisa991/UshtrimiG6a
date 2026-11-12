@@ -119,3 +119,42 @@ console.log("Tipi i shumës:", typeof shumaNumrave);
 console.log("Mesatarja:", mesatarja, "| Tipi:", typeof mesatarja);
 
 
+// ==========================================
+// 06. ANALIZA E KOHËS SË STUDIMIT
+// ==========================================
+console.log("=== 06. ANALIZA E KOHËS SË STUDIMIT ===");
+
+let eHene = 95;
+let eMarte = 80;
+let eMerkure = 115;
+
+let totalMinuta = eHene + eMarte + eMerkure;
+let kohaNeOre = totalMinuta / 60;
+let minutaMbetura = totalMinuta % 60;
+
+console.log("Gjithsej minuta:", totalMinuta);
+console.log("Koha në orë (dhjetore):", kohaNeOre);
+console.log("Minutat e mbetura (me %):", minutaMbetura);
+console.log("\n");
+
+// ==========================================
+// 07. INVENTARI I DYQANIT
+// ==========================================
+console.log("=== 07. INVENTARI I DYQANIT ===");
+
+let stoku = 120;
+let cmimiPerNjesi = 6.75;
+
+console.log("Stoku fillestar:", stoku, "njësi");
+
+stoku -= 18;
+console.log("Stoku pas shitjes së parë (-18):", stoku, "njësi");
+
+stoku -= 27;
+console.log("Stoku pas shitjes së dytë (-27):", stoku, "njësi");
+
+stoku += 35;
+console.log("Stoku pas furnizimit të ri (+35):", stoku, "njësi");
+
+let vleraStokut = stoku * cmimiPerNjesi;
+console.log("Vlera e stokut përfundimtar:", vleraStokut, "Euro");
